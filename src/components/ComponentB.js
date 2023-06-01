@@ -6,7 +6,7 @@ const ComponentB = (props) => {
     <div className="counter-main">
       <div className="counter-body">
         <div className="counter-circle" style={{ backgroundColor: colorCode ? colorCode : "#FCC200" }}>
-          <h1>{cendol.toString().length === 1 ? cendol : cendol}</h1>
+          <h1>{cendol.toString().length === 1 ? "0" + cendol : cendol}</h1>
           <span className="btn-counter" onClick={handleIncremet}>
             Click to increase counter
           </span>
